@@ -55,9 +55,9 @@ ${CMAKE_SOURCE_DIR}/hellolib.cpp
 ${CMAKE_SOURCE_DIR}/jimsh/jimsh.cpp
 	)
 
-set_target_properties(jimshpp PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX})
+# set_target_properties(jimshpp PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX})
 
-enable_testing()
+# enable_testing()
 
 # does the application run
 # add_test(NAME Runs COMMAND jimshpp)
