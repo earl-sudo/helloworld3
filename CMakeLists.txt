@@ -39,7 +39,7 @@ ${CMAKE_SOURCE_DIR}/hellolib.cpp
 
 
 # Build shared library jimppso
-add_library(jimppso SHARED
+add_library(hellolibso SHARED
 ${CMAKE_SOURCE_DIR}/hellolib.cpp
 	)
 
@@ -52,10 +52,10 @@ ${CMAKE_SOURCE_DIR}/hellolib.cpp
 add_executable(helloworld 
 ${CMAKE_SOURCE_DIR}/hellolib.cpp
 
-${CMAKE_SOURCE_DIR}/jimsh/jimsh.cpp
+${CMAKE_SOURCE_DIR}/helloworld.cpp
 	)
 
-# set_target_properties(jimshpp PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX})
+set_target_properties(helloworld PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX})
 
 # enable_testing()
 
